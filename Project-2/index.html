@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="landing-page">
+        <h1>Memory Match Game</h1>
+        <button onclick="startGame('fruits')">Fruits</button>
+        <button onclick="startGame('emojis')">Emojis</button>
+        <button onclick="startGame('animals')">Animals</button>
+        <button onclick="startGame('planets')">Planets</button>
+        <button onclick="startGame('Nature')">Nature</button>
+    </div>
+    
+    <div id="game-container" class="hidden">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time⏳: 30</div>
+        <div id="game-board"></div>
+        <div id="game-over" class="hidden"></div>
+        <div id="result" class="result-box"></div>
+    </div>
+    
+    <script src="json.js"></script>
+</body>
+</html>
